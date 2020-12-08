@@ -447,7 +447,7 @@ a {
   clear: both;
 }
 /* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   .column2 {
     width: 100%;
   }
@@ -11246,7 +11246,7 @@ header.masthead12 h3 {
 
 /* TEAM PAGE */
 header.masthead13{
-  padding-top: 1rem;
+  padding-top: 10rem;
   padding-bottom: 1rem;
   background-image: linear-gradient(rgba(237, 168, 206, 0.6), rgba(169, 200, 232, 0.6)),
     url("https://cdn.glitch.com/530d92f6-375b-4a27-915c-2ea2fbce1d73%2F_DSC9203%20(2).jpg?v=1604786356992");
@@ -11254,6 +11254,7 @@ header.masthead13{
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
+  height: 100vh;
 }
 header.masthead13 h1 {
   font-size: 2rem;

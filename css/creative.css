@@ -3730,7 +3730,6 @@ input[type="button"].btn-block {
   background-color: #f4623a;
   border: 0;
   border-radius: 1rem;
-  -webkit-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   -webkit-appearance: none;
   appearance: none;
@@ -3738,7 +3737,6 @@ input[type="button"].btn-block {
 
 @media (prefers-reduced-motion: reduce) {
   .custom-range::-webkit-slider-thumb {
-    -webkit-transition: none;
     transition: none;
   }
 }
@@ -3763,7 +3761,6 @@ input[type="button"].btn-block {
   background-color: #f4623a;
   border: 0;
   border-radius: 1rem;
-  -moz-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   -moz-appearance: none;
   appearance: none;
@@ -3771,7 +3768,6 @@ input[type="button"].btn-block {
 
 @media (prefers-reduced-motion: reduce) {
   .custom-range::-moz-range-thumb {
-    -moz-transition: none;
     transition: none;
   }
 }
@@ -3799,14 +3795,12 @@ input[type="button"].btn-block {
   background-color: #f4623a;
   border: 0;
   border-radius: 1rem;
-  -ms-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   appearance: none;
 }
 
 @media (prefers-reduced-motion: reduce) {
   .custom-range::-ms-thumb {
-    -ms-transition: none;
     transition: none;
   }
 }
@@ -9611,7 +9605,7 @@ html {
   color: #8b2455;
 }
 
-#mainNav .navbar-nav .nav-item .nav-link {
+#mainNav .navbar-nav .nav-item .nav-link, #mainNav .navbar-nav .nav-item .dropdown-item {
   color: #8b2455;
   font-family: 'Nanum Gothic', sans-serif;
   font-weight: 700;
@@ -9619,11 +9613,11 @@ html {
   padding: 0.75rem 0;
 }
 
-#mainNav .navbar-nav .nav-item .nav-link:hover, #mainNav .navbar-nav .nav-item .nav-link:active {
-  color: #f794b8;
+#mainNav .navbar-nav .nav-item .nav-link:hover, #mainNav .navbar-nav .nav-item .nav-link:active, #mainNav .navbar-nav .nav-item .dropdown-item:hover, #mainNav .navbar-nav .nav-item .dropdown-item:active {
+  color: #f794b8 !important;
 }
 
-#mainNav .navbar-nav .nav-item .nav-link.active {
+#mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .dropdown-item.active {
   color: #f794b8 !important;
 }
 
@@ -9631,6 +9625,13 @@ html {
   #mainNav {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
     background-color: transparent;
+  }
+  #mainNav .dropdown-menu {
+    background-color: white;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    border-radius: 0;
+    border: none;
+    width: 100%;
   }
   #mainNav .navbar-brand {
     color: rgba(255, 255, 255, 0.7);
@@ -9643,6 +9644,13 @@ html {
     padding: 0 1rem;
   }
   #mainNav .navbar-nav .nav-item .nav-link:hover {
+    color: #f794b8;
+  }
+  #mainNav .navbar-nav .nav-item .dropdown-item {
+    color: #8b2455;
+    padding: 0 1rem;
+  }
+  #mainNav .navbar-nav .nav-item .dropdown-item:hover {
     color: #f794b8;
   }
   #mainNav .navbar-nav .nav-item:last-child .nav-link {
@@ -9675,7 +9683,7 @@ a {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 72px);
-  background-image: linear-gradient(rgba(237, 168, 206, 0.9), rgba(169, 200, 232, 0.9)), url("https://cdn.glitch.com/530d92f6-375b-4a27-915c-2ea2fbce1d73%2F_IMG_7785-4-2.jpg?v=1589248278810");
+  background-image: linear-gradient(rgba(237, 168, 206, 0.6), rgba(169, 200, 232, 0.6)), url("https://cdn.glitch.com/530d92f6-375b-4a27-915c-2ea2fbce1d73%2F_IMG_7785-4-2.jpg?v=1589248278810");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -9694,58 +9702,22 @@ header.masthead h1 {
     padding-top: 72px;
     padding-bottom: 0;
   }
-  header.masthead p {
+  p {
     font-size: 1.15rem;
   }
-  header.masthead h1 {
+  h1 {
     font-size: 3rem;
     font-family: "playlistscript";
+  }
+  h3 {
+    font-size: 10rem;
+    font-family: "Nanum Gothic";
   }
 }
 
 @media (min-width: 1200px) {
   header.masthead h1 {
     font-size: 8rem;
-    font-family: "playlistscript";
-  }
-}
-
-header.masthead6 h1 {
-  font-size: 2.25rem;
-  font-family: "playlistscript";
-}
-
-header.masthead6 h3 {
-  font-size: 2.0rem;
-  font-family: "Nanum Gothic";
-}
-
-@media (min-width: 992px) {
-  header.masthead6 {
-    height: 140vh;
-    min-height: 50rem;
-    padding-top: 72px;
-    padding-bottom: 0;
-  }
-  header.masthead6 p {
-    font-size: 1.15rem;
-  }
-  header.masthead6 h1 {
-    font-size: 3rem;
-    font-family: playlistscript;
-  }
-}
-
-@media (min-width: 1200px) {
-  header.masthead6 h1 {
-    font-size: 6.5rem;
-    font-family: "playlistscript";
-  }
-}
-
-@media (max-width: 480px) {
-  header.masthead6 h1 {
-    font-size: 6.5rem;
     font-family: "playlistscript";
   }
 }
