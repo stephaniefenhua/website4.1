@@ -213,7 +213,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 /* IMPACT COUNTER */
-#pinkbg {
+#pinkbg, .pinkbg {
   background-color: rgba(255, 194, 211, 0.5);
   opacity: 1;
 }
@@ -245,6 +245,16 @@ p, h1, h2, h3, h4, h5, h6 {
   opacity: .8;
   border-radius: 5px;
   transform: translate(0, -50%);
+}
+
+.button.disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.button.disabled:hover {
+  box-shadow: none;
+  background-color: #b5bcff;
 }
 
 /* WHAT IS SUPERPOSITION SECTION */
@@ -11393,4 +11403,94 @@ header.masthead14 h3 {
   .sectionheader {
     font-size: 2em;
   }
+}
+
+/* CONFERENCE PAGE */
+header.masthead15{
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 72px);
+  background-image: linear-gradient(rgba(237, 168, 206, 0.6), rgba(169, 200, 232, 0.6)),
+    url("https://cdn.glitch.com/530d92f6-375b-4a27-915c-2ea2fbce1d73%2FIMG_1780.jpg?v=1607049009406");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+header.masthead15 h1 {
+  font-size: 2.25rem;
+  font-family: "playlistscript";
+}
+
+header.masthead15 h3 {
+  font-size: 2.0rem;
+  font-family: "Nanum Gothic";
+}
+
+@media (min-width: 992px) {
+  header.masthead15 {
+    height: 140vh;
+    min-height: 50rem;
+    padding-top: 72px;
+    padding-bottom: 0;
+  }
+  header.masthead15 p {
+    font-size: 1.15rem;
+  }
+  header.masthead15 h1 {
+    font-size: 3rem;
+    font-family: playlistscript;
+  }
+}
+@media (min-width: 1200px) {
+  header.masthead15 h1 {
+    font-size: 6.5rem;
+    font-family: "playlistscript";
+  }
+}
+@media (max-width: 480px) {
+  header.masthead15 h1 {
+    font-size: 6.5rem;
+    font-family: "playlistscript";
+  }
+}
+
+#conference-schedule {
+  background-color: #fff;
+  padding: 3%;
+}
+
+.card.conference-event-card {
+  background-color: transparent;
+  box-shadow: none;
+  border: 0.3em solid rgba(255, 255, 255, 0.5);
+  border-radius: 0;
+  margin: 2em 0;
+  position: relative;
+}
+
+.conference-event-card .card-title {
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: left;
+  color: #a3acff;
+}
+
+.conference-event-card .card-subtitle {
+  /* color: #ED96B6; */
+}
+
+.conference-event-card img {
+  height: 4em;
+  border-radius: 50%;
+}
+
+.card.conference-event-card:before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: -1em;
+  bottom: -1em;
+  left: -1em;
+  right: -1em;
+  background-image: linear-gradient(rgba(133, 34, 88, 0.2), rgba(169, 200, 232, 0.2));
 }

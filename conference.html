@@ -79,43 +79,37 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto my-2 my-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="/#about">ABOUT</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                ABOUT
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="story.html">OUR STORY</a>
+                <a class="dropdown-item" href="team.html">TEAM</a>
+                <a class="dropdown-item" href="photos.html">PHOTOS</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                PROGRAMS
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="chapters.html">CHAPTERS</a>
+                <a class="dropdown-item" href="hackathon.html">HACKATHON</a>
+                <a class="dropdown-item" href="workshops.html">WORKSHOPS</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                SUPPORT US
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="sponsors.html">SPONSORS</a>
+                <a class="dropdown-item" href="partners.html">PARTNERS</a>
+              </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="story.html">OUR STORY</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="team.html">TEAM</a>
-            </li>
-            <li class="nav-item">
-
-              <a class="nav-link js-scroll-trigger" href="chapters.html">CHAPTERS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="hackathon.html">HACKATHON</a>
-            </li>
-            
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="workshops.html">WORKSHOPS</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="sponsors.html"
-                >SPONSORS</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="partners.html"
-                >PARTNERS</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link js-scroll-trigger"
-                href="photos.html"
-                >PHOTOS</a
-              >
+              <a class="nav-link" href="#">CONFERENCE</a>
             </li>
           </ul>
         </div>
@@ -123,69 +117,37 @@
     </nav>
 
     <!-- Masthead -->
-    <header class="masthead" id = "headerwork">
+    <header class="masthead15" id = "headerwork">
+      <!-- STYLIZE PAGE TRANSITION -->
       <div class="container h-100">
-          <div
-            class="row h-100 align-items-center justify-content-center text-center"
-          >
+          <div class="row h-100 align-items-center justify-content-center text-center">
             <div class="col-lg-10 align-self-end">
               <h1 class="text-white">
-              superposition
-            </h1>
-          </div>
+              empowHERment
+              </h1>
+            </div>
           <div class="col-lg-8 align-self-baseline">
             <h3 class="text-white-75 font-weight-light mb-5" id="locationsub2">
-              BRIDGING THE GENDER GAP IN STEM
+              WOMEN IN LEADERSHIP CONFERENCE
             </h3>
-            <button
-              class="button"
-              onclick="location.href='https://calendar.google.com/calendar/u/0?cid=aGFja3BsdXMuaW9fY2xhc3Nyb29tM2FlZDMyYmZAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ'" id="home"
-            >
-              EVENTS
-            </button>
-            <button
-              class="button"
-              onclick="location.href='https://bit.ly/sp_slack'" id="home"
-            >
-              COMMUNITY SLACK
-            </button>
-            <button
-              class="button"
-              onclick="location.href='chapters.html'" id="home"
-            >
-              CHAPTERS
-            </button>
-            <!-- <h3 class="text-white-75 font-weight-light mb-5" id="locationsub2" style = "  font-family: 'Nanum Gothic', sans-serif;">
-              Uber HQ | February 29 - March 1, 2020
-            </h3> -->
-<!--             <br/>
-           <center> <button
-              class="button"
-              onclick="location.href='https://bit.ly/sp4_app'" id="home2"
-            >
-              ATTENDEE
-            </button>
-            <button
-              class="button"
-              onclick="location.href='https://bit.ly/sp4_volunteer'" id="home2"
-            >
-              MENTOR
-            </button>
-             <button
-              class="button"
-              onclick="location.href='https://bit.ly/sp4_partner'" id="home2"
-            >
-              PARTNER
-            </button> -->
-
-<!--           </center> -->
+            <!-- STYLIZE TO CHANGE ARRANGMENT OF BUTTONS -->
+            <a href="https://www.eventbrite.com/o/superposition-31678936075" target="_blank">
+                <!-- STYLIZE TO A COOL BUTTON -->
+                <button class="button">REGISTER</button>
+            </a>
+            <a href="https://forms.gle/QE3rYPwCmLodUg6X7" target="_blank">
+                <button class="button">AMBASSADOR PROGRAM</button>
+            </a>
+            <a href="#" target="_blank">
+                <button class="button disabled">SCHOLARSHIP PROGRAM</button>
+            </a>
           </div>
         </div>
       </div>
     </header>
 
-    <!--     COUNTER OF IMPACT -->
-    <center>
+    <!-- STYLIZE: EXPECTED ATTENDANCE OR NUMBER OF REGISTREES -->
+    <!-- <center>
       <section id="#about">
         <div id="pinkbg">
           <div class="row4">
@@ -206,190 +168,220 @@
           </div>
         </div>
       </section>
-    </center>
+    </center> -->
     
     
    <center>
       <section id="aboutpading">
-        <div class="w3-row ">
-          <div class="w3-container w3-half w3">
-            <p class="sectionheader" id="about">About Us</p>
+        <div class="w3-row">
+          <div class="w3-container">
+            <!-- STYLIZE PAGE TRANSITION -->
+            <p class="sectionheader" id="about">Empowering You</p>
             <p align="left" class="sectiontext">
-              Superposition is an international non-profit bridging the gender gap in STEM. Our mission is to <b class="emphasis">empower women in STEM</b> by creating educational opportunities & supportive spaces for developing their passions. 
+              Superposition’s EmpowHERment Conference aims to inspire women of all backgrounds to become proactive 
+              leaders in today’s society through our series of workshops, panels, and scholarship opportunities. 
             </p>
-            
             <p align="left" class="sectiontext">
-              Since 2016, we've held the <b class="emphasis">Bay Area's largest all-women and non-binary hackathon</b> in partnership with companies like <b class="emphasis">VSCO</b> and <b class="emphasis">Uber</b>. 
-              Starting in March 2020, we expanded beyond a 24-hour hackathon to provide year-round opportunities for our community through a webinar series, 
-              Uber mentorship program, chapter program, and more. With our 39 international chapters, events and social media content, we've reached <b class="emphasis">300,000+ students in 44 states and 52 countries.</b>
+              We hope to spread insight from women leaders in STEAM, business, activism, 
+              and more to young females around the globe.
             </p>
-            
-            <p align="left" class="sectiontext">
-              Get involved with Superposition by joining our <b class="emphasis"><a href="http://bit.ly/sp_slack">Community Slack</a></b> or <b class="emphasis"><a href="http://bit.ly/sp_chapter">founding your own chapter</a></b>! Find all of our latest Superposition opportunities <a href="http://linktr.ee/superpositionfc">here.</a></p>
 
-             <left
-              ><button
-                align="left"
-                class="button" id = "buttonmobile"
-                onclick="location.href='http://linktr.ee/superpositionfc'"
-              >
-                JOIN SUPERPOSITION
-              </button></left
-            >
+              <a href="http://linktr.ee/superpositionfc">
+                <button class="button" id = "buttonmobile">
+                  REGISTER 
+                </button>
+              </a>
           </div>
-          <div class="w3-container w3-half">
-            <img
-              id="introgifs"
-              src="https://cdn.glitch.com/530d92f6-375b-4a27-915c-2ea2fbce1d73%2FIMG-7812.JPG?v=1589322588453"
-            /> 
-          </div>
+          <!-- STYLIZE TIMER -->
         </div>
       </section>
     </center>
 
-
-    <!-- Masthead -->
-    <!-- 
+    <center>
+      <section id="conference-schedule">
+        <div class="w3-row">
+          <div class="w3-container">
+            <p class="sectionheader">Conference Schedule</p>
+            <div class="card conference-event-card">
+              <div class="card-body d-flex">
+                <div class="row">
+                  <div class="col-md-7">
+                    <h3 class="card-title">Opening Ceremony + Opening Keynote</h5>
+                    <h4 class="card-subtitle muted" style="text-align: left">10:00AM - 10:25AM</h5>
+                  </div>
+                  <div class="col-md-5">
+                    <div class="d-flex align-items-center p-2">
+                      <img src="https://media-exp1.licdn.com/dms/image/C5603AQHh2Uccit8CYg/profile-displayphoto-shrink_800_800/0/1602830507071?e=1613001600&v=beta&t=-SaEyxfIIbgMDYpQQboqKlXHZmPHD-IgPt-08RjjixQ"/>
+                      <div class="align-items-center p-2" align="left">
+                        <h5 class="m-0">Grace Ling</h5>
+                        <p class="m-0">Founder, Design Buddies</p>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center p-2">
+                      <img src="https://media-exp1.licdn.com/dms/image/C5603AQGEFfL882YyzA/profile-displayphoto-shrink_800_800/0/1607144964221?e=1613001600&v=beta&t=wFBsBKROMxswZW2p7dc8Gjmdo7_grMQwiDi0sON0QTY"/>
+                      <div class="align-items-center p-2" align="left">
+                        <h5 class="m-0">Vicky Vo</h5>
+                        <p class="m-0">Founder, Students of UXD</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </center>
+    <center>
+      <section id="aboutpading">
+        <div class="w3-row">
+          <div class="w3-container">
+            <p class="sectionheader" id="about">Scholarships</p>
+            <!-- STYLIZE TO CARDS? -->
+            <p align="left" class="sectiontext">
+              We will be offering scholarships to support women in Social Impact & Education. Each 
+              category will have 3 prizes: $250, $150, $100. Application information will be released soon. Applicants 
+              may apply to more than one category. 
+              We’re also offering an exclusive $100 scholarship available only to Superposition ambassadors of any gender identity. Become 
+              an ambassador at <a href="bit.ly/sp_ecaa">bit.ly/sp_ecaa</a>! 
+            </p>
+        </div>
+      </section>
+    </center>
+    <center>
+      <section id="aboutpading">
+        <div class="w3-row">
+          <div class="w3-container">
+            <p class="sectionheader" id="about">Become an Ambassador?</p>
+            <div class="row">
+              <div class="col-12 col-md-7">
+                <p align="left" class="sectiontext">
+                  Being an EmpowHERment Conference ambassador means that you’ll be making a difference in someone’s life by 
+                  bringing them into this empowering experience. You can help bridge the gender gap in STEM by motivating 
+                  more girls and providing them with inspiring role models they can hear from at the EmpowHERment Conference! 
+                  With your help, we can bring STEAM opportunities to more communities across the world. 
+                </p>
+              </div>
+              <div class="col-12 col-md-5">
+                <h5>What You'll Get</h5>
+                <ul style="text-align: left">
+                  <li>Gain valuable experience as a brand ambassador</li>
+                  <li>Opportunities to foster new connections with other ambassadors</li>
+                  <li>Raffles & giveaways</li>
+                  <li>Eligibility to get hours for the Presidential Volunteer Service Award</li>
+                  <li>An ambassador-only scholarship opportunity</li>
+                </ul>
+                <p><a href="https://forms.gle/QE3rYPwCmLodUg6X7">Apply</a> to be an ambassador today!</p>
+              </div>
+            </div>
+        </div>
+      </section>
+    </center> 
+ 
     <section>
-      <header class="masthead2">
-        <div class="container h-100">
-          <div
-            class="row h-100 align-items-center justify-content-center text-center"
-          >
-            <div class="col-lg-10 align-self-end">
-              <h1 class="text-white">
-                Female empowerment
-              </h1>
+      <div class="faqcolors">
+        <center>
+          <p class="sectionheader" id="faqs">Frequently Asked Questions</p>
+          <br />
+        </center>
+        <center>
+          <div class="faqs">
+            <div class="row">
+              <div class="column">
+                <button class="accordion" id="hoveryo">
+                  How much does it cost?
+                </button>
+                <div class="panel">
+                  <p align="left" class="faqstext">
+                    Attending the event is completely free!
+                  </p>
+                </div>
+                <button class="accordion" id="hoveryo">
+                  Who can attend?
+                </button>
+                <div class="panel">
+                  <p align="left" class="faqstext">
+                    Our EmpowHERment Conference is open to everyone, regardless of age and gender identity. 
+                  </p>
+                </div>
+                <button class="accordion" id="hoveryo">
+                  Where is it held? 
+                </button>
+                <div class="panel">
+                  <p align="left" class="faqstext">
+                    The conference will be 100% online! 
+                  </p>
+                </div>
+                <button class="accordion" id="hoveryo">
+                  When is the event? 
+                </button>
+                <div class="panel">
+                  <p align="left" class="faqstext">
+                    The event is scheduled to be from 10 AM PST - 4 PM PST 
+                    on January 16th, 2021. Check out the schedule above for more details about specific workshops!
+                  </p>
+                </div>
+              </div>
+              <div class="column">
+                <button class="accordion" id="hoveryo">
+                  Do I have to attend every workshop? 
+                </button>
+                <div class="panel">
+                  <p align="left" class="faqstext">
+                    While it’s recommended to attend most of the conference, we do not require attending all workshops.
+                  </p>
+                </div>
+                <button class="accordion" id="hoveryo">
+                  Who is eligible to apply for scholarships?
+                </button>
+                <div class="panel">
+                  <p align="left" class="faqstext">
+                    Our Social Impact and Education Scholarships are available to female-identifying 
+                    and non-binary individuals. However, our Education Scholarship is open only to students enrolled 
+                    in any educational institution. The Ambassador Scholarship is available only to Superposition ambassadors. 
+                  </p>
+                </div>
+                <button class="accordion" id="hoveryo">
+                  How do I become an ambassador for the conference?
+                </button>
+                <div class="panel">
+                  <p align="left" class="faqstext">
+                    The application is available <a href="https://forms.gle/QE3rYPwCmLodUg6X7">here</a>.
+                  </p>
+                </div>
+              </div>
             </div>
-            <div class="col-lg-8 align-self-baseline">
-              <h3 class="text-white-75 font-weight-light mb-5" style = "  font-family: 'Nanum Gothic', sans-serif;">
-                does not stop after 24 hours, and neither should Superposition. In addition to hosting an annual hackathon,
-                we're expanding our initiative to provide year-round opportunities to our community.
-              </h3>
+          </div>
+        </center>
+      </div>
+      <br />
+      <br />
+       <br />
+    </section>
+
+    <center>
+      <section id="aboutpading">
+        <div class="w3-row">
+          <div class="w3-container">
+            <p class="sectionheader" id="about">Sponsors</p>
+            <a href="https://drive.google.com/file/d/1cG3tqeLfm-LgA8Psk_Z1lsbXGlc1MDkh/view" target="_blank">
+                <button class="button">SPONSORSHIP PROSPECTUS</button>
+            </a>
+            <div class="row justify-content-center">
+              <img
+                class="col-6 col-md-3"
+                src="https://cdn.glitch.com/530d92f6-375b-4a27-915c-2ea2fbce1d73%2Fclarilogo.png?v=1607049409830"
+              />
+              <img
+                class="col-6 col-md-3"
+                src="https://cdn.glitch.com/530d92f6-375b-4a27-915c-2ea2fbce1d73%2Fzagglogo.png?v=1607049414373"
+              />
             </div>
           </div>
         </div>
-      </header>
-    </section>
-    
-     <section>
-      <center>
-        <p class="sectionheader">Our Team</p>
-        <div id="begin" class="team">
-          <div class="row2">
-            <div class="column2">
-              <img
-                class="circle"
-                src="https://cdn.glitch.com/530d92f6-375b-4a27-915c-2ea2fbce1d73%2FPFP.jpg?v=1604786608622"
-              />
-              <h2 class="teamnames" style = "  font-family: 'Nanum Gothic', sans-serif;">Stephanie Su</h2>
-              <p class="teamdescriptions">Lead Director</p>
-              <a href="https://www.instagram.com/steph.su/" target="_blank"
-                ><img
-                  class="teamsocials"
-                  src="https://cdn.glitch.com/f23b8598-8c75-4b1a-83f7-6d57abc0ee65%2FIGLOGO.png?v=1574203607644"
-              /></a>
-              <a
-                href="https://www.facebook.com/stephanie.su.9634"
-                target="_blank"
-                ><img
-                  class="teamsocials"
-                  src="https://cdn.glitch.com/f23b8598-8c75-4b1a-83f7-6d57abc0ee65%2Fimage%20(36).png?v=1570251787028"
-              /></a>
-              <a href="mailto: stephanie@superposition.tech" target="_blank"
-                ><img
-                  class="teamsocials"
-                  src="https://cdn.glitch.com/f23b8598-8c75-4b1a-83f7-6d57abc0ee65%2Femailicon.png?v=1574202803620"
-              /></a>
-              <a
-                href="https://www.linkedin.com/in/stephanie-su-527437169/"
-                target="_blank"
-                ><img
-                  class="teamsocials"
-                  src="https://cdn.glitch.com/f23b8598-8c75-4b1a-83f7-6d57abc0ee65%2Flinkedinicon.png?v=1574202928219"
-              /></a>
-            </div>
-            
-            <div class="column2">
-              <img
-                class="circle"
-                src="https://cdn.glitch.com/f23b8598-8c75-4b1a-83f7-6d57abc0ee65%2FGIRLS%20WHO%20CODE%20(14).png?v=1571125705882"
-              />
-              <h2 class="teamnames" style = "  font-family: 'Nanum Gothic', sans-serif;">Miha Bhaskaran</h2>
-              <p class="teamdescriptions">Director of Mentorship</p>
-              <a href="https://www.facebook.com/athmihab" target="_blank"
-                ><img
-                  class="teamsocials"
-                  src="https://cdn.glitch.com/f23b8598-8c75-4b1a-83f7-6d57abc0ee65%2Fimage%20(36).png?v=1570251787028"
-              /></a>
-              <a href="mailto:athmiha@superposition.tech" target="_blank"
-                ><img
-                  class="teamsocials"
-                  src="https://cdn.glitch.com/f23b8598-8c75-4b1a-83f7-6d57abc0ee65%2Femailicon.png?v=1574202803620"
-              /></a>
-            </div>
-            <div class="column2">
-              <img
-                class="circle"
-                src="https://cdn.glitch.com/f23b8598-8c75-4b1a-83f7-6d57abc0ee65%2FGIRLS%20WHO%20CODE%20(11).png?v=1571122618755"
-              />
-              <h2 class="teamnames" style = "  font-family: 'Nanum Gothic', sans-serif;">Helena Lowe</h2>
-              <p class="teamdescriptions">Director of Chapters</p>
-              <a href="https://www.instagram.com/helenarlowe/" target="_blank"
-                ><img
-                  class="teamsocials"
-                  src="https://cdn.glitch.com/f23b8598-8c75-4b1a-83f7-6d57abc0ee65%2FIGLOGO.png?v=1574203607644"
-              /></a>
-              <a
-                href="https://www.facebook.com/helena.lowe.7739"
-                target="_blank"
-                ><img
-                  class="teamsocials"
-                  src="https://cdn.glitch.com/f23b8598-8c75-4b1a-83f7-6d57abc0ee65%2Fimage%20(36).png?v=1570251787028"
-              /></a>
-              <a href="mailto:helenalowe03@gmail.com" target="_blank"
-                ><img
-                  class="teamsocials"
-                  src="https://cdn.glitch.com/f23b8598-8c75-4b1a-83f7-6d57abc0ee65%2Femailicon.png?v=1574202803620"
-              /></a>
-              <a
-                href="https://www.linkedin.com/in/helena-lowe-a7197b182/"
-                target="_blank"
-                ><img
-                  class="teamsocials"
-                  src="https://cdn.glitch.com/f23b8598-8c75-4b1a-83f7-6d57abc0ee65%2Flinkedinicon.png?v=1574202928219"
-              /></a>
-            </div>
-            <div class="column2">
-              <img
-                class="circle"
-                src="https://cdn.glitch.com/f23b8598-8c75-4b1a-83f7-6d57abc0ee65%2FGIRLS%20WHO%20CODE%20(7).png?v=1571121304034"
-              />
-              <h2 class="teamnames" style = "  font-family: 'Nanum Gothic', sans-serif;">Shamita Gurusu</h2>
-              <p class="teamdescriptions">Director of Operations</p>
-              <a
-                href="https://www.instagram.com/thedisney_darling/"
-                target="_blank"
-                ><img
-                  class="teamsocials"
-                  src="https://cdn.glitch.com/f23b8598-8c75-4b1a-83f7-6d57abc0ee65%2FIGLOGO.png?v=1574203607644"
-              /></a>
-              <a href="shamita@superposition.tech" target="_blank"
-                ><img
-                  class="teamsocials"
-                  src="https://cdn.glitch.com/f23b8598-8c75-4b1a-83f7-6d57abc0ee65%2Femailicon.png?v=1574202803620"
-              /></a>
-            </div>
+      </section>
+    </center> 
 
-          </div>
-        </div>
-        <br/>
-        <br/>
-
-      </center>
-    </section>
--->
-  
   <!-- FOOTER -->  
     <section>
       <center>
