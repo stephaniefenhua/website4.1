@@ -275,4 +275,22 @@ function showPage() {
   document.getElementById("loader").style.display = "none";
   document.getElementById("everything").style.display = "block";
   document.getElementById("headerwork").style.height = "100vh";
+  showConferenceTimer();
+}
+
+function showConferenceTimer() {
+  var timer = document.getElementById("conference-countdown");
+  var fmt = function(n) { return n > 10 ? n : "0" + n };
+  if(timer) {
+    setInterval(function() {
+      var conferenceDate = new Date(2021, 0, 16, 18);
+      var now = new Date();
+      var diff = conferenceDate.getTime() - now.getTime();
+      var days = Math.floor(diff / (1000 * 3600 * 24));
+      var hours = Math.floor(diff / (1000 * 3600)) - days * 24;
+      var minutes = Math.floor(diff / (1000 * 60)) - (days * 24 * 60) - (hours * 60);
+      var seconds = Math.floor(diff / (1000)) - (days * 24 * 3600) - (hours * 3600) - (minutes * 60);
+      timer.innerHTML = fmt(days) + ":" + fmt(hours) + ":" + fmt(minutes) + ":" + fmt(seconds);
+    }, 1000)
+  }
 }

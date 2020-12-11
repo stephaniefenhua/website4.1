@@ -9,6 +9,13 @@
     src: url("/fonts/now.medium.otf") format("opentype");
 }
 
+/* Setting CSS Variables */
+:root {
+  --blue: rgb(202, 241, 255);
+  --pink: rgb(247, 148, 184);
+  --gradient: linear-gradient(rgba(247, 148, 184, 0.6), rgba(202, 241, 255, 0.6));
+}
+
 #home2{
   display: none;
 }
@@ -273,7 +280,7 @@ p, h1, h2, h3, h4, h5, h6 {
   text-decoration: none !important;
   padding: 1em !important;
   display: inline-block;
-  font-family: "Now Bold";
+  font-family: "Nanum Gothic";
   padding: 0.75em;
   box-shadow: 0.1em 0.1em #828eff;
   color: white;
@@ -11456,7 +11463,7 @@ header.masthead15 h1 {
 
 header.masthead15 h3 {
   font-size: 2.0rem;
-  font-family: "Now Bold";
+  font-family: "Nanum Gothic";
 }
 
 @media (min-width: 992px) {
@@ -11492,13 +11499,32 @@ header.masthead15 h3 {
   padding: 3%;
 }
 
+#conference-countdown {
+  font-size: 4em;
+  font-family: "Now Bold";
+}
+
+.conference-countdown .conference-countdown-caption {
+  font-size: 2em; 
+  font-family: "Now Medium";
+}
+
+.gradient-text {
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .card.conference-event-card {
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.8);
   box-shadow: none;
-  border: 0.3em solid rgba(255, 255, 255, 0.5);
+  /* border: 0.3em solid rgba(255, 255, 255, 0.5); */
+  border: none;
   border-radius: 0;
-  margin: 2em 0;
+  margin: 3em 0;
+  border-radius: 0.7em;
   position: relative;
+  max-width: 900px;
 }
 
 .conference-event-card .card-title {
@@ -11513,9 +11539,14 @@ header.masthead15 h3 {
   text-transform: uppercase;
   color: #a3acff;
 }
+
+.conference-event-card p {
+  font-family: "Nanum Gothic";
+  color: #222;
+}
 .conference-event-card .card-subtitle {
   color: #ED96B6;
-  font-family: "Now Bold";
+  font-family: "Now Medium";
 }
 
 .conference-event-card .row {
@@ -11525,17 +11556,20 @@ header.masthead15 h3 {
 .conference-event-card img {
   height: 4em;
   border-radius: 50%;
+  border: 0.1em solid var(--blue);
 }
 
 .card.conference-event-card:before {
   content: "";
   z-index: -1;
   position: absolute;
-  top: -1em;
-  bottom: -1em;
-  left: -1em;
-  right: -1em;
-  background-image: linear-gradient(rgba(133, 34, 88, 0.2), rgba(169, 200, 232, 0.2));
+  top: -0.5em;
+  bottom: -0.5em;
+  left: -0.5em;
+  right: -0.5em;
+  background-image: var(--gradient);
+  border-radius: 1em;
+  box-shadow: 0.1em 0.1em 1em #eee;
 }
 
 #conference-opportunities .row {
