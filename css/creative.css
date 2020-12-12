@@ -9600,7 +9600,7 @@ html {
 }
 
 #mainNav .navbar-brand {
-  font-family: 'Now Bold', sans-serif;
+  font-family: 'Nanum Gothic', sans-serif;
   font-weight: 700;
   color: #8b2455;
 }
@@ -9612,14 +9612,14 @@ html {
 
 #mainNav .navbar-nav .nav-item .nav-link, #mainNav .navbar-nav .nav-item .dropdown-item {
   color: #8b2455;
-  font-family: 'Now Bold', sans-serif;
+  font-family: 'Nanum Gothic', sans-serif;
   font-weight: 700;
   font-size: 0.9rem;
   padding: 0.75rem 0;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link.button-cta, #mainNav .navbar-nav .nav-item .dropdown-item.button-cta {
-  font-family: "Now Bold";
+  font-family: "Nanum Gothic";
   padding: 0.75em;
   padding-right: 0.75em !important;
   background-color: #b5bcff !important;

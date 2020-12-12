@@ -11461,7 +11461,7 @@ header.masthead15{
 }
 header.masthead15 h1 {
   font-size: 2.25rem;
-  font-family: "playlistscript";
+  font-family: "Now Bold";
 }
 
 header.masthead15 h3 {
@@ -11481,19 +11481,11 @@ header.masthead15 h3 {
   }
   header.masthead15 h1 {
     font-size: 3rem;
-    font-family: playlistscript;
   }
 }
 @media (min-width: 1200px) {
   header.masthead15 h1 {
     font-size: 6.5rem;
-    font-family: "playlistscript";
-  }
-}
-@media (max-width: 480px) {
-  header.masthead15 h1 {
-    /* font-size: 6.5rem; */
-    font-family: "playlistscript";
   }
 }
 

@@ -8,7 +8,7 @@ html {
   background-color: $white;
   transition: background-color transparent;
   .navbar-brand {
-    font-family: 'Now Bold', sans-serif;
+    font-family: 'Nanum Gothic', sans-serif;
     font-weight: $font-weight-bold;
     color: #8b2455;
   }
@@ -18,12 +18,12 @@ html {
       align-items: center;
       .nav-link, .dropdown-item {
         color: #8b2455;
-        font-family: 'Now Bold', sans-serif;
+        font-family: 'Nanum Gothic', sans-serif;
         font-weight: $font-weight-bold;
         font-size: 0.9rem;
         padding: 0.75rem 0;
         &.button-cta {
-          font-family: "Now Bold";
+          font-family: "Nanum Gothic";
           padding: 0.75em;
           padding-right: 0.75em !important;
           background-color:#b5bcff !important;
