@@ -87,6 +87,24 @@ $(document).on("scroll", function() {
   }
 });
 
+$(document).on("scroll", function() {
+  var pageTop = $(document).scrollTop();
+  var pageBottom = pageTop + $(window).height();
+  var tags = $(".conference-event-card");
+
+  for (var i = 0; i < tags.length; i++) {
+    var tag = tags[i];
+
+    if ($(tag).position().top < pageTop - $(window).height() + $(tag).height() + 100) {
+      // console.log(i, $(tag).position().top)
+      // console.log(i, pageTop - $(window).height());
+      $(tag).addClass("bigger");
+    } else {
+      $(tag).removeClass("bigger");
+    }
+  }
+});
+
 // Get the modal
 var modal = document.getElementById("myModal");
 
@@ -280,7 +298,7 @@ function showPage() {
 
 function showConferenceTimer() {
   var timer = document.getElementById("conference-countdown");
-  var fmt = function(n) { return n > 10 ? n : "0" + n };
+  var fmt = function(n) { return n > 9 ? n : "0" + n };
   if(timer) {
     setInterval(function() {
       var conferenceDate = new Date(2021, 0, 16, 18);

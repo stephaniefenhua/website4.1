@@ -11,8 +11,8 @@
 
 /* Setting CSS Variables */
 :root {
-  --blue: rgb(202, 241, 255);
-  --pink: rgb(247, 148, 184);
+  --blue: #caf1ff;
+  --pink: #f794b8;
   --gradient: linear-gradient(rgba(247, 148, 184, 0.6), rgba(202, 241, 255, 0.6));
 }
 
@@ -510,8 +510,11 @@ a {
   border-radius: 50%;
   transition: 0.3s;
   /* -webkit-box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.15); */
-  -moz-box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.15);
+  /* -moz-box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.15); */
   /* box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.15); */
+  padding: 0 !important;
+  margin: 0 !important;
+  border: 0.1em solid var(--blue);
 }
 
 .circle:hover {
@@ -11517,6 +11520,7 @@ header.masthead15 h3 {
 
 .card.conference-event-card {
   background-color: rgba(255, 255, 255, 0.8);
+  background-color: #fff;
   box-shadow: none;
   /* border: 0.3em solid rgba(255, 255, 255, 0.5); */
   border: none;
@@ -11525,6 +11529,36 @@ header.masthead15 h3 {
   border-radius: 0.7em;
   position: relative;
   max-width: 900px;
+  transition: 0.2s ease;
+}
+
+.card.conference-event-card:before {
+  content: "";
+  z-index: -2;
+  position: absolute;
+  top: -0.5em;
+  bottom: -0.5em;
+  left: -0.5em;
+  right: -0.5em;
+  background-image: var(--gradient);
+  border-radius: 1em;
+}
+
+.card.conference-event-card:after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  border-radius: 0.7em;
+}
+
+.card.conference-event-card.bigger {
+  transform: scale(1.02);
+  box-shadow: 0.1em 0.1em 1em #eee;
 }
 
 .conference-event-card .card-title {
@@ -11553,23 +11587,26 @@ header.masthead15 h3 {
   align-items: center;
 }
 
+.conference-event-card .img-wrapper {
+  position: relative;
+  z-index: 2;
+}
+
+.conference-event-card .img-wrapper:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -0.1em;
+  bottom: -0.1em;
+  left: -0.1em;
+  right: -0.1em;
+  border-radius: 50%;
+  background-color: var(--blue);
+}
+
 .conference-event-card img {
   height: 4em;
   border-radius: 50%;
-  border: 0.1em solid var(--blue);
-}
-
-.card.conference-event-card:before {
-  content: "";
-  z-index: -1;
-  position: absolute;
-  top: -0.5em;
-  bottom: -0.5em;
-  left: -0.5em;
-  right: -0.5em;
-  background-image: var(--gradient);
-  border-radius: 1em;
-  box-shadow: 0.1em 0.1em 1em #eee;
 }
 
 #conference-opportunities .row {

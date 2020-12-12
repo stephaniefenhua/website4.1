@@ -47,7 +47,11 @@
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
    crossorigin=""></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
     <script src="script.js"></script>
+    <script>
+      ScrollReveal().reveal('.conference-event-card');
+    </script>
   </head>
 
   <body onload="myFunction1000()" id="page-top">
@@ -190,18 +194,17 @@
 
     <center>
       <section id="conference-schedule">
-        <div class="w3-row">
-          <div class="w3-container">
-            <p class="sectionheader">Conference Schedule</p>
-            
-            <p align="left" class="sectiontext">
-              Superposition’s EmpowHERment Conference aims to inspire women of all backgrounds to become proactive 
-              leaders in today’s society through our series of workshops, panels, and scholarship opportunities. 
-            </p>
-            <p align="left" class="sectiontext">
-              We hope to spread insight from women leaders in STEAM, business, activism, 
-              and more to young females around the globe.
-            </p>
+            <p class="sectionheader mt-3">Conference Schedule</p>
+            <div class="row py-5">
+              <p align="left" class="col-sm-6 m-0 sectiontext">
+                Superposition’s EmpowHERment Conference aims to inspire women of all backgrounds to become proactive 
+                leaders in today’s society through our series of workshops, panels, and scholarship opportunities. 
+              </p>
+              <p align="left" class="col-sm-6 m-0 sectiontext">
+                We hope to spread insight from women leaders in STEAM, business, activism, 
+                and more to young females around the globe.
+              </p>
+            </div>
             <div class="conference-countdown">
               <p id="conference-countdown" class="gradient-text">JANUARY 16TH, 2021</p>
               <p class="conference-countdown-caption gradient-text">Until EmpowHERment</p>
@@ -234,17 +237,12 @@
                   </div>
                   <div class="col-md-6 d-flex flex-wrap">
                     <div class="d-flex align-items-center p-2">
-                      <img src="https://cdn.glitch.com/530d92f6-375b-4a27-915c-2ea2fbce1d73%2Fgrace-ling.jpg?v=1607479028980"/>
+                      <div class="img-wrapper">
+                        <img src="https://cdn.glitch.com/530d92f6-375b-4a27-915c-2ea2fbce1d73%2Fgrace-ling.jpg?v=1607479028980"/>
+                      </div>
                       <div class="align-items-center p-2" align="left">
                         <h5 class="m-0">Grace Ling</h5>
                         <p class="m-0">Founder, Design Buddies</p>
-                      </div>
-                    </div>
-                    <div class="d-flex align-items-center p-2">
-                      <img src="https://cdn.glitch.com/530d92f6-375b-4a27-915c-2ea2fbce1d73%2Fvicky-vo.jpg?v=1607478935483"/>
-                      <div class="align-items-center p-2" align="left">
-                        <h5 class="m-0">Vicky Vo</h5>
-                        <p class="m-0">Founder, Students of UXD</p>
                       </div>
                     </div>
                   </div>
@@ -260,7 +258,9 @@
                   </div>
                   <div class="col-12 col-md-6">
                     <div class="d-flex p-2 align-items-center">
-                      <img src="https://cdn.glitch.com/530d92f6-375b-4a27-915c-2ea2fbce1d73%2Fjade.jpg?v=1607478903082"/>
+                      <div class="img-wrapper">
+                        <img src="https://cdn.glitch.com/530d92f6-375b-4a27-915c-2ea2fbce1d73%2Fjade.jpg?v=1607478903082"/>
+                      </div>
                       <div class="align-items-center p-2" align="left">
                         <h5 class="m-0">Jade Darmawangsa</h5>
                         <p class="m-0">CEO, X8 Media<br>Top 100 Business Podcast Host<br>381K YouTube Subscribers</p>
@@ -289,7 +289,9 @@
                   </div>
                   <!-- <div class="col-md-6">
                     <div class="d-flex align-items-center p-2">
-                      <img src=""/>
+                      <div class="img-wrapper">
+                        <img src=""/>
+                      </div>
                       <div class="align-items-center p-2" align="left">
                         <h5 class="m-0">Name</h5>
                         <p class="m-0">Position</p>
@@ -308,7 +310,9 @@
                   </div>
                   <div class="col-md-6">
                     <div class="d-flex align-items-center p-2">
-                      <img src="https://cdn.glitch.com/530d92f6-375b-4a27-915c-2ea2fbce1d73%2Fstephanie-hu.jpg?v=1607479344538"/>
+                      <div class="img-wrapper">
+                        <img src="https://cdn.glitch.com/530d92f6-375b-4a27-915c-2ea2fbce1d73%2Fstephanie-hu.jpg?v=1607479344538"/>
+                      </div>
                       <div class="align-items-center p-2" align="left">
                         <h5 class="m-0">Stephanie Hu</h5>
                         <p class="m-0">Founder & Executive Director, Dear Asian Youth</p>
@@ -327,28 +331,36 @@
                   </div>
                   <div class="col-md-6 d-flex flex-wrap">
                     <div class="d-flex align-items-center p-1">
-                      <img src="https://cdn.glitch.com/530d92f6-375b-4a27-915c-2ea2fbce1d73%2Fsophia-delrosario.jpg?v=1607479755688"/>
+                      <div class="img-wrapper">
+                        <img src="https://cdn.glitch.com/530d92f6-375b-4a27-915c-2ea2fbce1d73%2Fsophia-delrosario.jpg?v=1607479755688"/>
+                      </div>
                       <div class="align-items-center p-2" align="left">
                         <h5 class="m-0">Sophia Delrosario</h5>
                         <p class="m-0">Founder, Zenerations</p>
                       </div>
                     </div>
                     <div class="d-flex align-items-center p-1">
-                      <img src="https://cdn.glitch.com/530d92f6-375b-4a27-915c-2ea2fbce1d73%2Faudrey-pe.jpg?v=1607479685188"/>
+                      <div class="img-wrapper">
+                        <img src="https://cdn.glitch.com/530d92f6-375b-4a27-915c-2ea2fbce1d73%2Faudrey-pe.jpg?v=1607479685188"/>
+                      </div>
                       <div class="align-items-center p-2" align="left">
                         <h5 class="m-0">Audrey Pe</h5>
                         <p class="m-0">Founder, WiTech</p>
                       </div>
                     </div>
                     <div class="d-flex align-items-center p-1">
-                      <img src="https://cdn.glitch.com/530d92f6-375b-4a27-915c-2ea2fbce1d73%2Fkatelin-zhou.jpg?v=1607479805694"/>
+                      <div class="img-wrapper">
+                        <img src="https://cdn.glitch.com/530d92f6-375b-4a27-915c-2ea2fbce1d73%2Fkatelin-zhou.jpg?v=1607479805694"/>
+                      </div>
                       <div class="align-items-center p-2" align="left">
                         <h5 class="m-0">Katelin Zhou</h5>
                         <p class="m-0">Co-Founder, Diversify Our Narrative</p>
                       </div>
                     </div>
                     <div class="d-flex align-items-center p-1">
-                      <img src="https://cdn.glitch.com/530d92f6-375b-4a27-915c-2ea2fbce1d73%2Fjasmine-nguyen.jpg?v=1607479852693"/>
+                      <div class="img-wrapper">
+                        <img src="https://cdn.glitch.com/530d92f6-375b-4a27-915c-2ea2fbce1d73%2Fjasmine-nguyen.jpg?v=1607479852693"/>
+                      </div>
                       <div class="align-items-center p-2" align="left">
                         <h5 class="m-0">Jasmine Nguyen</h5>
                         <p class="m-0">Co-Founder, Diversify Our Narrative</p>
@@ -367,7 +379,9 @@
                   </div>
                   <!-- <div class="col-md-6">
                     <div class="d-flex align-items-center p-2">
-                      <img src=""/>
+                      <div class="img-wrapper">
+                        <img src=""/>
+                      </div>
                       <div class="align-items-center p-2" align="left">
                         <h5 class="m-0">Name</h5>
                         <p class="m-0">Position</p>
@@ -377,8 +391,6 @@
                 </div>
               </div>
             </div>
-          </div>
-        </div>
       </section>
     </center>
     <center>
